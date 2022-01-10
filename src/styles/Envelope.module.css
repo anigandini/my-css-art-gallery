@@ -1,0 +1,148 @@
+.container {
+    background-color: #b8c4ca;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background: repeating-linear-gradient(
+    45deg,
+    #f5f2d2,
+    #cd370d 10px,
+    #f5f2d2 10px,
+    #465298 20px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.front {
+    position: absolute;
+    width: 190px;
+    height: 95px;
+    background-color: #e7e8e9;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.back {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 47.5px solid #f2d9a9;
+    border-top:  47.5px solid #e7e8e9;
+    border-left: 97.5px solid #f2d9a9;
+    border-right: 97.5px solid #f5f2d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.stamp {
+    position: absolute;
+    width: 18.75px;
+    height: 18.75px;
+    background-color: #60cead;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted #e7e8e9;
+    top: 5%;
+    right: 5%;
+}
+
+.heart {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f32b0c;
+    transform: rotate(45deg);
+}
+
+.heart::after,
+.heart::before  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f32b0c;
+    border-radius: 50%;
+}
+.heart::after {
+    transform: translateY(-50%);
+}
+.heart::before {
+    transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+    .background {
+        width: 400px;
+        height: 200px;
+    }
+
+    .front {
+        width: 390px;
+        height: 190px;
+    
+    }
+
+    .back {
+        border-bottom: 95px solid #f2d9a9;
+        border-top:  95px solid #e7e8e9;
+        border-left: 195px solid #f2d9a9;
+        border-right: 195px solid #f5f2d2; 
+    }
+
+    .stamp {
+        width: 64px;
+        height: 64px;
+        border: 5px dotted #e7e8e9;
+    }
+
+    .heart {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 960px) {
+    .background {
+        width: 800px;
+        height: 400px;
+    }
+
+    .front {
+        width: 780px;
+        height: 380px;
+    
+    }
+
+    .back {
+        border-bottom: 190px solid #f2d9a9;
+        border-top:  190px solid #e7e8e9;
+        border-left: 390px solid #f2d9a9;
+        border-right: 390px solid #f5f2d2; 
+    }
+
+    .stamp {
+        width: 150px;
+        height: 150px;
+        border: 5px dotted #e7e8e9;
+    }
+
+    .heart {
+        width: 64px;
+        height: 64px;
+    }
+}

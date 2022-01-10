@@ -1,0 +1,198 @@
+.container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.diamond {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.topLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid #f5e9d3;
+    border-bottom: 50px solid #f5e9d3;
+    border-left: 50px solid transparent;
+}
+
+.topLeftChild {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #d44e88;
+    border-bottom: 25px solid #f470a1;
+    border-left: 25px solid transparent;
+}
+
+.topRigth {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid #820059;
+    border-left: 50px solid #ba0469;
+}
+
+.topRightChild {
+    position: absolute;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #c64387;
+    border-left: 25px solid #d44e88;
+}
+
+.bottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ab005d;
+    border-right: 50px solid #ab005d;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+.bottomLeftChild {
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #f470a1;
+    border-right: 25px solid #fdafc5;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.bottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #3d014d;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid #a52572;
+}
+
+.bottomRightChild {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #c64387;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #feb9d8;
+}
+
+.ring {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background:  linear-gradient(to top, rgba(71,66,9,1) 0%, rgba(203,190,47,0.9416141456582633) 73%, rgba(255,246,189,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring span {
+    border-radius: 50%;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 1025px) {
+    .diamond {
+        width: 400px;
+        height: 400px;
+    }
+
+    .topLeft {
+        border-top: 100px solid transparent;
+        border-right: 100px solid #f5e9d3;
+        border-bottom: 100px solid #f5e9d3;
+        border-left: 100px solid transparent;
+    }
+
+    .topLeftChild {
+        border-top: 50px solid transparent;
+        border-right: 50px solid #d44e88;
+        border-bottom: 50px solid #f470a1;
+        border-left: 50px solid transparent;
+    }
+
+    .topRigth {
+        border-top: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid #820059;
+        border-left: 100px solid #ba0469;
+    }
+
+    .topRightChild {
+        border-top: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid #c64387;
+        border-left: 50px solid #d44e88;
+    }
+
+    .bottomLeft {
+        border-top: 100px solid #ab005d;
+        border-right: 100px solid #ab005d;
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid transparent;
+    }
+    
+    .bottomLeftChild {
+        border-top: 50px solid #f470a1;
+        border-right: 50px solid #fdafc5;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid transparent;
+    }
+
+    .bottomRight {
+        border-top: 100px solid #3d014d;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid #a52572;
+    }
+
+    .bottomRightChild {
+        border-top: 50px solid #c64387;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid #feb9d8;
+    }
+
+    .ring {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ring span {
+        width: 350px;
+        height: 350px;
+    }
+
+}

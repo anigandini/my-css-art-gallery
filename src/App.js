@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Diamond from './components/Diamond'
+import Envelope from './components/Envelope'
+import YingYang from './components/YingYang'
+import RetroGirl from './components/RetroGirl'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={styles.App}>
+      <header className={styles.header}>
+        <h1> My CSS art gallery</h1>
       </header>
+      <main>
+        <Diamond />
+        <Envelope />
+        <YingYang />
+        <RetroGirl />
+      </main>
     </div>
   );
 }
